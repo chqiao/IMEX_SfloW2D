@@ -2059,6 +2059,7 @@ CONTAINS
 
     IF ( restart ) THEN
 
+       WRITE(backup_unit,newrun_parameters)
        WRITE(backup_unit,restart_parameters)
 
     ELSE
